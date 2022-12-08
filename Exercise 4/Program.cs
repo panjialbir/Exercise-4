@@ -57,7 +57,7 @@ namespace StackUsing
 
         static void Main(string[] args)
         {
-            Stack s = new Stack();
+            size s = new Stack();
             while (true)
             {
                 Console.WriteLine();
