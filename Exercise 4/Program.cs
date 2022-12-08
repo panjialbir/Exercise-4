@@ -9,9 +9,9 @@ namespace StackUsing
         private int max;
         public Stack(int size)
         {
-            ele = new int[size];
+            ele = new int[26];
             top = -1;
-            max = size;
+            max = 26;
         }
 
         public void push(int item)
