@@ -4,12 +4,12 @@ namespace StackUsing
 {
     class Stack
     {
-        private int[] ele;
+        private int[] panji;
         private int top;
         private int max;
         public Stack(int size)
         {
-            ele = new int[26];
+            panji = new int[26];
             top = -1;
             max = 26;
         }
@@ -23,7 +23,7 @@ namespace StackUsing
             }
             else
             {
-                ele[++top] = item;
+                panji[++top] = item;
             }
         }
         public int pop()
@@ -35,8 +35,8 @@ namespace StackUsing
             }
             else
             {
-                Console.WriteLine("Poped element is: " + ele[top]);
-                return ele[top--];
+                Console.WriteLine("Poped element is: " + panji[top]);
+                return panji[top--];
             }
         }
         public void printStack()
@@ -50,8 +50,9 @@ namespace StackUsing
             {
                 for (int i = 0; i <= top; i++)
                 {
-                    Console.WriteLine("Item[" + (i + 1) + "]: " + ele[i]);
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + panji[i]);
                 }
             }
         }
     }
+
